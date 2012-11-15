@@ -158,7 +158,7 @@ Commands:
    tidy -- remove broken symlinks from FROM_DIR
    report -- report on symlinks in FROM_DIR and files and directories in TO_DIR
    
-FROM_DIR defaults to ~ and TO_DIR defaults to ~/.dotfiles.
+FROM_DIR defaults to ~ and TO_DIR defaults to ~/Code/dotfiles.
    """
 
 if __name__ == "__main__":
@@ -186,7 +186,7 @@ if __name__ == "__main__":
         try:
             TO_DIR = sys.argv[3]
         except IndexError:
-            TO_DIR = os.path.join('~','.dotfiles')
+            TO_DIR = os.path.join('~','Code', 'dotfiles')
         TO_DIR = os.path.abspath(os.path.expanduser(TO_DIR))
 
         if not os.path.isdir(TO_DIR):

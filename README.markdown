@@ -1,16 +1,42 @@
-dotfilemanager.py - a dotfiles manager script.
+[![Latest Version](https://pypip.in/version/dotfilemanager/badge.svg)](https://pypi.python.org/pypi/dotfilemanager/)
+[![Downloads](https://pypip.in/download/dotfilemanager/badge.svg)](https://pypi.python.org/pypi/dotfilemanager/)
+[![Supported Python versions](https://pypip.in/py_versions/dotfilemanager/badge.svg)](https://pypi.python.org/pypi/dotfilemanager/)
+[![Development Status](https://pypip.in/status/dotfilemanager/badge.svg)](https://pypi.python.org/pypi/dotfilemanager/)
+[![License](https://pypip.in/license/dotfilemanager/badge.svg)](https://pypi.python.org/pypi/dotfilemanager/)
+
+dotfilemanager.py
+=================
+
+A dotfiles manager script.
 
 This is similar to [Steve Kemp's dotfile manager][] but I rewrote it in
 Python and tweaked the behaviour a bit.
 
 [Steve Kemp's dotfile manager]: http://blog.steve.org.uk/i_ve_got_a_sick_friend__i_need_her_help_.html
 
-`dotfilemanager link` Make a symlink in your homedir to each top-level 
+
+Requirements
+------------
+
+Python 2.7. It might work (or could easily be made to work) with 2.6 and 3.x
+as well but I haven't tried.
+
+
+Installation
+------------
+
+    pip install dotfilemanager
+
+
+Usage
+-----
+
+`dotfilemanager link` Make a symlink in your homedir to each top-level
 file and directory in `~/.dotfiles`.
 
 `dotfilemanager tidy` Delete any broken symlinks in your homedir.
 
-`dotfilemanager report` Report on what link or tidy would do, but don't 
+`dotfilemanager report` Report on what link or tidy would do, but don't
 actually create or delete any symlinks.
 
 Optionally you can specify the directories to link from and to as 
